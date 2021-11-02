@@ -1,0 +1,7 @@
+00 10 * * * ./turn-ac-power-on.sh
+25 10 * * * ./fetch-current-state.sh
+45 10 * * * ./turn-ac-power-off.sh
+
+00 16 * * * ./turn-ac-power-on.sh
+25 16 * * * ./fetch-current-state.sh
+45 16 * * * ./turn-ac-power-off.sh
