@@ -21,12 +21,15 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-00 10 * * * /home/pi/code/tahosa-automation/ac-on.sh
-25 10 * * * /home/pi/code/tahosa-automation/fetch-current-state.sh
-45 10 * * * /home/pi/code/tahosa-automation/ac-off.sh
+# 00 10 * * * /home/pi/code/tahosa-automation/ac-on.sh
+# 25 10 * * * /home/pi/code/tahosa-automation/fetch-current-state.sh
+# 45 10 * * * /home/pi/code/tahosa-automation/ac-off.sh
 
-56 16 * * * /home/pi/code/tahosa-automation/wifi-yeti-connect.sh
-57 16 * * * /home/pi/code/tahosa-automation/ac-on.sh
-58 16 * * * /home/pi/code/tahosa-automation/fetch-current-state.sh > /home/pi/code/state
-59 16 * * * /home/pi/code/tahosa-automation/ac-off.sh
-00 17 * * * /home/pi/code/tahosa-automation/wifi-mrn3-connect.sh
+
+01 * * * * /home/pi/code/tahosa-automation/ac-on.sh
+11 * * * * /home/pi/code/tahosa-automation/fetch-current-state.sh > /home/pi/code/tahosa-automation/state
+12 * * * * /home/pi/code/tahosa-automation/wifi-mrn3-connect.sh
+13 * * * * /home/pi/code/tahosa-automation/send-status-email.sh
+14 * * * * /home/pi/code/tahosa-automation/wifi-yeti-connect.sh
+15 * * * * /home/pi/code/tahosa-automation/ac-off.sh
+
