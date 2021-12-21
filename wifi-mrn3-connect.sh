@@ -1,1 +1,1 @@
-wpa_cli -i wlan0 select_network 0
+/usr/sbin/wpa_cli -i wlan0 select_network 0
